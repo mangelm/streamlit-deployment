@@ -10,6 +10,7 @@ venv/
 env/
 ENV/
 .venv/
+.env/
 
 # Modelos y datos serializados (comentado para proyecto educativo)
 # *.pkl
