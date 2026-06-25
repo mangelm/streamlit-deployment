@@ -30,8 +30,8 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ secrets.DOCKERHUB_USERNAME }}/streamlit-dashboard:latest:latest
-            ${{ secrets.DOCKERHUB_USERNAME }}/streamlit-dashboard:lates:v${{ github.run_number }}
+            ${{ secrets.DOCKERHUB_USERNAME }}/streamlit-dashboard:latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/streamlit-dashboard:v${{ github.run_number }}
       # Disparar el deploy hook de Render después de subir la imagen
       - name: Disparar deployment en Render
         if: success()
